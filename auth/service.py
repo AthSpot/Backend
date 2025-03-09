@@ -5,9 +5,9 @@ from .models import User
 from .schemas import UserCreate, UserUpdate, CognitoTokenResponse
 
 # AWS Cognito configuration
-COGNITO_USER_POOL_ID = "your-user-pool-id"  # Replace with your pool ID
-COGNITO_APP_CLIENT_ID = "your-client-id"  # Replace with your client ID
-COGNITO_REGION = "your-aws-region"  # e.g., "us-east-1"
+COGNITO_USER_POOL_ID = "user-pool-id"  # Replace with your pool ID
+COGNITO_APP_CLIENT_ID = "client-id"  # Replace with your client ID
+COGNITO_REGION = "aws-region"  # e.g., "us-east-1"
 
 # Initialize Cognito client
 cognito_client = boto3.client('cognito-idp', region_name=COGNITO_REGION)

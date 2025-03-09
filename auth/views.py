@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from typing import Optional
 
 from .schemas import UserCreate, UserUpdate, User as UserSchema, CognitoTokenResponse
-from ..database import get_db
+from ..s3_database import get_db
 from .service import (
     sign_up_user,
     confirm_sign_up,

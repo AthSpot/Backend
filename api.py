@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, UploadFile, File, Request, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from ..database import get_db
+from ..s3_database import get_db
 from ..utils.s3_service import upload_file_to_s3, delete_file_from_s3
 
 router = APIRouter(prefix="/uploads", tags=["uploads"])

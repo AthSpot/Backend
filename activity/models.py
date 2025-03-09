@@ -2,7 +2,7 @@ from sqlalchemy import Column, DateTime, Integer, String, ForeignKey, Table, Boo
 from sqlalchemy.orm import relationship
 from datetime import datetime
 
-from ..database import Base
+from ..s3_database import Base
 from .enums import TeamStatus, ActivityType, BookingStatus
 
 # Team members association table

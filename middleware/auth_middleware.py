@@ -11,9 +11,9 @@ import time
 class CognitoAuthMiddleware(BaseHTTPMiddleware):
     def __init__(self, app):
         super().__init__(app)
-        self.cognito_region = "your-aws-region"  # e.g., "us-east-1"
-        self.cognito_user_pool_id = "your-user-pool-id"
-        self.cognito_app_client_id = "your-client-id"
+        self.cognito_region = "aws-region"  # e.g., "us-east-1"
+        self.cognito_user_pool_id = "user-pool-id"
+        self.cognito_app_client_id = "client-id"
 
         # Public keys URL
         self.jwks_url = f"https://cognito-idp.{self.cognito_region}.amazonaws.com/{self.cognito_user_pool_id}/.well-known/jwks.json"

@@ -2,7 +2,7 @@ from sqlalchemy import Column, Date, DateTime, Integer, String, Enum, ForeignKey
 from sqlalchemy.orm import relationship
 from datetime import datetime
 
-from ..database import Base
+from ..s3_database import Base
 from .enums import Gender, FriendshipStatus
 
 # Friendship association table

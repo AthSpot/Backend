@@ -7,8 +7,8 @@ import os
 from urllib.parse import urlparse
 
 # AWS S3 configuration
-S3_BUCKET_NAME = "your-s3-bucket-name"  # Replace with your bucket name
-S3_REGION = "your-aws-region"  # e.g., "us-east-1"
+S3_BUCKET_NAME = "s3-bucket-name"  # Replace with your bucket name
+S3_REGION = "aws-region"  # e.g., "us-east-1"
 S3_BASE_URL = f"https://{S3_BUCKET_NAME}.s3.{S3_REGION}.amazonaws.com/"
 
 # Initialize S3 client
